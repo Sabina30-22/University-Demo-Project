@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Project</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--sub-header section starts here-->
+      <section class="sub-header">
+         <nav>
+            <a href="index.html"><img src="./images/diu-logo.png" alt="logo"></a>
+            <div class="list-items" id="menuLink">
+              <i class="fa fa-times-circle-o" onclick="hiddenMenu()"></i>
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="course.html">COURSE</a></li>
+                  <li><a href="convocation.html">CONVOCATION</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenuBar()"></i>
+         </nav>
+          <h1>Course Program</h1> 
+      </section>
+
+    <!--sub-header section ends here-->
+    <!--course section starts here-->
+       <section class="course-details">
+          <h1>Course Prospectus</h1>
+          <p>Education is the most powerful weapon and removes darkness.</p>
+
+          <div class="row">
+             <div class="course-col">
+                <h3>Engineering</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rerum sapiente. Fugiat error voluptas quis non illum quasi voluptate voluptates. Asperiores sint nesciunt animi, dicta sit commodi maxime quam error?</p>
+             </div>
+             <div class="course-col">
+              <h3>BBA</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rerum sapiente. Fugiat error voluptas quis non illum quasi voluptate voluptates. Asperiores sint nesciunt animi, dicta sit commodi maxime quam error?</p>
+           </div>
+           <div class="course-col">
+            <h3>English</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rerum sapiente. Fugiat error voluptas quis non illum quasi voluptate voluptates. Asperiores sint nesciunt animi, dicta sit commodi maxime quam error?</p>
+         </div>
+         <div class="course-col">
+          <h3>LLB</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rerum sapiente. Fugiat error voluptas quis non illum quasi voluptate voluptates. Asperiores sint nesciunt animi, dicta sit commodi maxime quam error?</p>
+       </div>
+          </div>
+       </section>
+    <!--course section ends here-->
+
+   <!--facilities section starts here-->
+     <section class="facilites">
+        <h1>Facilities Offer</h1>
+        <p>At Daffodil International University, students get the opportunity to think, learn and grow.</p>
+        
+        <div class="row">
+           <div class="facilities-col">
+             <img src="./images/transport.jpg" alt="">
+               <h3>Diu Transportation</h3>
+               <p>To make the student’s life easier and safe, we are providing 50+ buses from different points of Dhaka city .</p>
+           </div>
+           <div class="facilities-col">
+            <img src="./images/library.jpg" alt="">
+            <h3>Diu Library</h3>
+            <p>DIU library has a collection of over 50000 books, journals, research papers and enriching the resources day by day.</p>
+          </div>
+          <div class="facilities-col">
+            <img src="./images/playground.jpg" alt="">
+            <h3>Green Playground</h3>
+            <p>To ensure the mental and physical well being of our students and employees, we are providing a well-decored green playground</p>
+          </div>
+          <div class="facilities-col">
+            <img src="./images/laptop.jpg" alt="">
+            <h3>One Student One Laptop</h3>
+            <p>Under the ‘One student one laptop’ project, DIU has distributed over 25000 free laptops among the student</p>
+            <p></p>
+          </div>
+        </div>
+      </section>
+   <!--facilities section ends here-->
+
+    <!--footer section starts here-->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>We have students coming from different backgrounds, cultures, and nationalities as well.<br> More than 500 international students are enrolled in various programs.</p>
+    
+        <div class="footer-icons">
+           <i class="fa fa-facebook-f"></i>
+           <i class="fa fa-twitter"></i>
+           <i class="fa fa-instagram"></i>
+           <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> By Sabina Yasmin</p>
+   </section>
+   <!--footer section ends here-->
+
+    <!--script part start-->
+    <script>
+       var menuLink = document.getElementById("menuLink");
+
+       function showMenuBar(){
+         menuLink.style.right = "0";
+       }
+       function hiddenMenu(){
+        menuLink.style.right = "-240px";
+       }
+    </script>
+</body>
+</html>
